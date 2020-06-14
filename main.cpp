@@ -13,8 +13,5 @@ int main(){
   y = 20;
   swap(&x, &y);
   cout << x << "," << y << endl;
-  int z = 15;
-  if(z < 20)
-    cout << "kurang";
   return 0;
 }
