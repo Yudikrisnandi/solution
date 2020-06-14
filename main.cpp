@@ -1,17 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void swap(int &a, int &b){
-  int temp = a;
-  a = b;
-  b = temp;
+int add (int a, int b){
+  int total;
+  return total = a + b;
 }
 
 int main(){
-  int x, y;
+  int x, y, c;
   x = 10;
   y = 20;
-  swap(x, y);
-  cout << x << "," << y << endl;
+  c = add(x, y);
+  cout <<c<< endl;
   return 0;
 }
