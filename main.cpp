@@ -1,11 +1,15 @@
 #include <bits/stdc++.h>       
 using namespace std;
+#define say(x) #x
+#define love true
+#ifndef YK
+  #define YK 18
+#endif
 
 
 int main() {
-    int x = 10;
-    int y = 12;
-    int * const ptr = &x;
-    cout << *ptr << endl;
+    cout << say(yk) << endl;
+    cout << love << endl;
+    cout << YK << endl;
     return 0;
 }
