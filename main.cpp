@@ -1,24 +1,25 @@
 #include <bits/stdc++.h>       
 using namespace std;
 
-class Complex {
+class Rectangle {
   public:
-    int real;
-    int img;
-  Complex operator+(Complex c){
-    Complex temp;
-    temp.real = real + c.real;
-    temp.img = img + c.img;
-    return temp;
-  }
+    int length;
+    int breadth;
+
+    int area() {
+      return length * breadth;
+    }
+
+    int perimeter() {
+      return 2 * (length + breadth);
+    }
 };
 
-
 int main() {
-    Complex c1, c2, c3;
-    c1.real = 5; c1.img=4;
-    c2.real = 3; c2.img=2;
-    c3 = c1 + c2;
-    cout << c3.real << " " << c3.img << endl;
-    return 0;
+  Rectangle a;
+  a.length = 4;
+  a.breadth = 5;
+
+  cout << "area : " << a.area() << endl;
+  cout << "perimeter : " << a.perimeter() << endl;
 }
