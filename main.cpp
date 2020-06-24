@@ -13,6 +13,6 @@ int main() {
   }
   cout << endl;
   delete []p;
-  p = NULL;
+  p = nullptr;
   return 0;
 }
