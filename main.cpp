@@ -7,6 +7,7 @@ int main() {
   int *ptra;
   ptra = &a;
   cout << &a << endl;
+  cout << ptra << endl;
   cout << &ptra << endl;
   cout << *ptra << endl;
   return 0;
