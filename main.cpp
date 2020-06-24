@@ -16,9 +16,7 @@ class Rectangle {
 };
 
 int main() {
-  Rectangle a;
-  Rectangle *ptr;
-  ptr = &a;
+  Rectangle *ptr = new Rectangle;
   ptr -> length = 3;
   ptr -> breadth = 4;
 
