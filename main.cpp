@@ -17,9 +17,11 @@ class Rectangle {
 
 int main() {
   Rectangle a;
-  a.length = 4;
-  a.breadth = 5;
+  Rectangle *ptr;
+  ptr = &a;
+  ptr -> length = 3;
+  ptr -> breadth = 4;
 
-  cout << "area : " << a.area() << endl;
-  cout << "perimeter : " << a.perimeter() << endl;
+  cout << "area : " << ptr -> area() << endl;
+  cout << "perimeter : " << ptr -> perimeter() << endl;
 }
