@@ -1,24 +1,24 @@
 /**
  *    author:  ykaka
- *    created: 01.08.2020 13:34:48       
+ *    created: 02.08.2020 09:34:48       
 **/
  
 #include <bits/stdc++.h>
 using namespace std;
  
 int main(){
-  int a = 1;
-  int b = 7;
-  int i = 0;
-  bool year = true;
-  while(year){
-    a *= 3;
-    b *= 2;
-    i++;
-    if(a > b){
-      year = false;
+  int n;
+  cin >> n;
+  int a, b;
+  int pre = 0;
+  int total = 0;
+  while(n--){
+    cin >> a >> b;
+    total = (total + b) - a;
+    if(total > pre){
+      pre = total;
     }
   }
-  cout << i << endl;
+  cout << pre << endl;
   return 0;
 }
