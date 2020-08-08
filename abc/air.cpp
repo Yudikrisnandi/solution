@@ -5,7 +5,7 @@
  
 #include <iostream>
 using namespace std;
-using ll long lon
+using ll long long
  
 int main(){
   int x;
