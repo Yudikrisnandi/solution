@@ -14,14 +14,17 @@ int main(){
   ios_base::sync_with_stdio(0);
   int n, k;
   cin >> n >> k;
-  while(k--){
-    if(n % 10 == 0){
-      n = n / 10;
-    }else{
-      n--;
-    }
+  int i;
+  vector<int> v;
+  while(cin >> i){
+    v.push_back(i);
   }
-  cout << n << endl;
+  int count = 0;
+  rep(i,n){
+    if(v[i] > 0 && v[i] >= v[k-1])
+      count++;
+  }
+  cout << count << endl;
   return 0;
 }
 
