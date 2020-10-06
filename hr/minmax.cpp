@@ -14,10 +14,10 @@ int main(){
   cout.tie(0);
   ios_base::sync_with_stdio(0);
   int n = 5;
-  int total = 0;
-  vector<int> v;
+  ull total = 0;
+  vector<ull> v;
   while(n--){
-    int x;
+    ull x;
     cin >> x;
     v.pb(x);
     total += x;
