@@ -1,6 +1,6 @@
 # How to run this solution
 
-* make sure to install g++ and c++ compiler in you system
+* make sure to install g++ and c++ compiler in your system
 * compile c++ file with this command
 ```bash
 g++ -o a file.cpp
